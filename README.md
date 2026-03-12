@@ -1,6 +1,4 @@
-### Ierp Quality Module
-
-Ithena\'s ERP 
+### Quality Inspection Module for ITHENA
 
 ### Installation
 
@@ -8,7 +6,7 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch version-16
+bench get-app https://github.com/RevatiJagdaleIthena/Quality-Inspection-Module --branch version-16
 bench install-app ierp_quality_module
 ```
 
