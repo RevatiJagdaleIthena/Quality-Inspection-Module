@@ -11,15 +11,46 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
+#add_to_apps_screen = [
 # 	{
-# 		"name": "ierp_quality_module",
-# 		"logo": "/assets/ierp_quality_module/logo.png",
-# 		"title": "Ierp Quality Module",
-# 		"route": "/ierp_quality_module",
-# 		"has_permission": "ierp_quality_module.api.permission.has_app_permission"
-# 	}
-# ]
+ #		"name": "ierp_quality_module",
+ #		"logo": "/assets/ierp_quality_module/logo.png",
+ 	#	"title": "Ierp Quality Module",
+ #		"route": "/ierp_quality_module",
+ 	#	"has_permission": "ierp_quality_module.api.permission.has_app_permission"
+ #	}
+ #]
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", [
+                "Quality Inspection", 
+                "Quality Inspection Reading", 
+                "Quality Inspection Parameter", 
+                "Quality Inspection Template", 
+                "Item Quality Inspection Parameter", 
+                "Quality Inspection Parameter Group"
+            ]]
+        ]
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["doc_type", "in", [
+                "Quality Inspection", 
+                "Quality Inspection Reading", 
+                "Quality Inspection Parameter", 
+                "Quality Inspection Template", 
+                "Item Quality Inspection Parameter", 
+                "Quality Inspection Parameter Group"
+            ]]
+        ]
+    },
+    {
+        "dt": "Client Script", "filters": [["dt", "in", ["Quality Inspection", "Quality Inspection Reading", "Job Card"]]]}
+]
 
 # Includes in <head>
 # ------------------
